@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OOPConcepts.Backend.Date">
-    <Position X="4.25" Y="3.75" Width="2" />
+    <Position X="4.5" Y="4.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAACEMAAAAAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
@@ -11,22 +11,29 @@
     <Position X="4.75" Y="0.5" Width="1.5" />
     <AssociationLine Name="Borndate" Type="OOPConcepts.Backend.Date">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.143" Y="0.266" />
+        <Position X="0.143" Y="0.308" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="HireDate" Type="OOPConcepts.Backend.Date">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="-0.919" Y="0.256" />
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.781" Y="0.311" Height="0.182" Width="0.966" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAEAAAAAAABAEEAAAAAAAACAAAAAAAAAAACAAAAg=</HashCode>
+      <HashCode>ACACAEAAAAAAABAEEAAAAAAAACAAAAAAAAAAACAAAAg=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Borndate" />
       <Property Name="HireDate" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="OOPConcepts.Backend.SalaryEmployee">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACQAAAA=</HashCode>
+      <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

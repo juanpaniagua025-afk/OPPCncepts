@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OOPConcepts.Backend;
+﻿namespace OOPConcepts.Backend;
 
 public abstract class Employee
 {
@@ -28,9 +24,17 @@ public abstract class Employee
 	// Methods 
 	public override string ToString()
 	{
-		return $"{Id}/t{FirstName} {LastName}/n/t" +
-			   $"value to pay: {GetValueTopay()}";
+		return $"{Id}\t{FirstName} {LastName}\n\t" +
+			   $"Value to pay: {GetValueTopay(),20:C2}";			
 	}
 
-	public abstract decimal GetValueTopay();	
+	public abstract decimal GetValueTopay();
+	private decimal Validatesalary(decimal salary)
+	{
+       if (salary < 0)
+		{
+			throw new ArgumentOutOfRangeException(nameof(salary), "Saalary");
+		}
+		return salary;
+	}
 }
