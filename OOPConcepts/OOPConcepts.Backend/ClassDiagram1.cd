@@ -51,10 +51,17 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OOPConcepts.Backend.ComisionEmployee">
-    <Position X="0.5" Y="1.25" Width="2" />
+    <Position X="0.5" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAKAAAAAAAAAAAAEAAAABAAAAAIAEAAAAAgAACAAAAA=</HashCode>
       <FileName>ComisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPConcepts.Backend.BaseComisionEmployee">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAACQAAAA=</HashCode>
+      <FileName>BaseComisionEmplyee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
