@@ -2,14 +2,15 @@
 
 public abstract class Employee
 {
-	//Constructors
-	public Employee(int id, string firstnmae, string lastname, bool isActive, Date hireDate)
+	// Constructor corregido
+	public Employee(int id, string firstnmae, string lastname, bool isActive,
+		Date borndate, Date hireDate)
 	{
-		Id=id;
+		Id = id;
 		FirstName = firstnmae;
 		LastName = lastname;
 		IsActive = isActive;
-		Borndate = hireDate;
+		Borndate = borndate;
 		HireDate = hireDate;
 	}
 
@@ -25,16 +26,8 @@ public abstract class Employee
 	public override string ToString()
 	{
 		return $"{Id}\t{FirstName} {LastName}\n\t" +
-			   $"Value to pay: {GetValueTopay(),20:C2}";			
+			   $"Value to pay.....: {GetValueTopay(),20:C2}";
 	}
 
 	public abstract decimal GetValueTopay();
-	private decimal Validatesalary(decimal salary)
-	{
-       if (salary < 0)
-		{
-			throw new ArgumentOutOfRangeException(nameof(salary), "Saalary");
-		}
-		return salary;
-	}
 }
